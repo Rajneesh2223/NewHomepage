@@ -1,0 +1,62 @@
+.box1{
+    overflow: hidden;
+}
+.box1.dark-mode{
+    background-color: #0F0F0F;
+}
+
+.container{
+    display: flex   ;
+    width: 699px;
+    height: 398px;
+    padding: 64px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
+    margin:auto;
+    margin-top: 100px;
+    border-radius: 24px;
+background: linear-gradient(100deg, #E5B8D9 1%, #C9B8E5 100.1%);
+
+
+}
+.container.dark-mode{
+    border-radius: 24px;
+background: linear-gradient(99deg, #380D2C 0.87%, #4D173E 0.88%, #2B174D 97.78%);
+}
+.title1{
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Poppins', sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 64px */
+    
+
+}
+.para{
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+.btn{
+    display: flex;
+padding: 10px 20px;
+justify-content: center;
+align-items: center;
+border-radius: 8px;
+color: white;
+background: var(--Main-Black, #0F0F0F);
+color: #FFF;
+font-family: Poppins;
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 32px */
+}
+.btn.dark-mode{
+    background-color: white;
+    color: black;
+}

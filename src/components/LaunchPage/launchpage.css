@@ -1,0 +1,282 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* Rest of your CSS */
+
+.back{
+    height:1200 px;
+    
+}
+.upper-heading{
+    font-family: 'Poppins', sans-serif;
+   position: absolute;
+   
+   margin-left: 150px;
+    font-size: 16px;
+}
+.upper{
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.blob1{
+    width: 284px;
+    height: 256px;
+    border-radius: 50%;
+    background-color: #FF00B8;
+    position:absolute;
+    top: 0;
+    left: 0px;
+    filter: blur(160px);
+    z-index: -1;
+    animation: blob1 8s linear infinite; 
+    
+
+}
+@keyframes blob1{
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        top: 0px;
+        left: 1000px ;
+    }
+    50%{
+        top: 900;
+        left: 1300px ;
+    }
+    75%{
+        top: 900px;
+        left: 0px;
+
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+    }
+}
+.blob2{
+    
+    width: 284px;
+    height: 256px;
+    border-radius: 50%;
+    background-color:#772BF2;
+    position:absolute;
+    
+    left: 1300px;
+    filter: blur(160px);
+    z-index: -1;
+    animation: blob2 8s linear infinite; 
+    
+
+
+}
+@keyframes blob2{
+    0%{
+        top: 900px;
+        left: 1000px;
+    }
+    25%{
+        top: 900px;
+        left: 0px;
+    }
+    50%{
+        top: 0px;
+        left: 0px;
+    }
+    75%{
+        top: 0px;
+        left: 1000px ;
+
+    }
+    100%{
+        top: 900px;
+        left: 1000px;
+    }
+} 
+
+
+
+
+.box {
+   
+    border: 1px solid black;
+  display: block;
+  height: 900px;
+  position: relative;
+   overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+.title-heading {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    line-height: 1;
+   color: black;
+  
+   }
+
+.heading {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.new-heading {
+    font-family: 'Poppins', sans-serif;
+    width: 631px;
+    height: 30px;
+    width: 100%;
+    margin: 72px auto;
+    text-align: center;
+   font-size: 26px;
+    flex-shrink: 0;
+    fill: linear-gradient(90deg, #B2B2B2 0.04%, #808080 100.52%);
+
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 72px auto;
+    gap: 64px;
+    border-radius: 24px;
+    width: 434px;
+    height: 183px;
+    background: linear-gradient(100deg, #E5B8D9 1%, #C9B8E5 100%);
+}
+.clock.dark-mode{
+    border-radius: 24px;
+background: linear-gradient(99deg, #380D2C 0.87%, #4D173E 0.88%, #2B174D 97.78%);
+  }
+  .black.dark-mode{
+    color: white;
+    background-color: transparent;
+  }
+.black {
+    
+    display: flex;
+    font-size: 50px;
+    gap: 20px;
+    justify-content: center; 
+    align-items: center; 
+    font-family: 'Poppins', sans-serif;
+  
+}
+
+.notify{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin : 24px auto;
+}
+
+.custom-input {
+  width: 560px;
+   align-items: center;
+  font-size: 20px;
+  padding: 16px 20px; 
+  margin-right: 8px;
+}
+.custom-button {
+    font-family: 'Poppins', sans-serif;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    width: 190px;
+    font-size: 30px;
+    font-weight: 500 !important;
+    font-style: normal;
+    padding: 7px 20px;
+    color: rgba(15, 15, 15, 1);
+    border-radius: .5em;
+    
+    background-color: white;
+  }
+
+.custom-button.inactive {
+    
+    color: rgba(128, 128, 128, 1);
+}
+
+
+.dark-mode {
+    background-color: black; /* Dark background color */
+    color: #fff; /* Text color for dark mode */
+    /* Add other dark mode styles as needed */
+  }
+  
+  .blob1.dark-mode{
+    background-color: #FF00B8;
+    z-index: auto;
+    width: 300px;
+    height: 400px;
+    filter: blur(200px);
+  }
+  .blob2.dark-mode{
+    background-color: #FF00B8;
+    z-index: auto;
+    background-color:#772BF2;
+    width: 300px;
+    height: 400px;
+    filter: blur(200px);
+  }
+
+  
+  
+  
+  .title-heading.light-mode {
+    background: linear-gradient(90deg,rgb(11, 10, 10), rgba(46, 43, 43, 0.493));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Add other styles specific to light mode as needed */
+  }
+  .new-heading.dark-mode{
+   color: rgba(255, 255, 255, 1); 
+   font-size: 30px;
+  }
+  
+  .custom-button.dark-mode{
+    color: rgba(15, 15, 15, 0.50);
+    background-color: white;
+  }
+  .custom-button.light-mode{
+    color: white;
+    background-color: black;
+  }
+  .custom-input.dark-mode{
+    background-color: black;
+  }
+ 
+
+  .upper-heading.dark-mode{
+    color:white;
+    
+  }
+  .upper.dark-mode{
+   
+   background-color: white;
+   color: black;
+  }
+
+  .toggle{
+    top: 0;
+    margin-left: 1200px;
+    background-color: black;
+    color: white;
+  }
+  
